@@ -42,9 +42,9 @@ function main(){
 }
 
 function create_cue_text(cue){
-  cue_text = 'PERFORMER ' + cue.performer + ' \n' +
-             'TITLE ' + cue.title + ' \n' +
-             'FILE ' + cue.file + '\n';
+  cue_text = 'PERFORMER "' + cue.performer + '" \n' +
+             'TITLE "' + cue.title + '" \n' +
+             'FILE "' + cue.file + '" \n';
   for (i=0; i<cue.tracks.length; i++){
     var track = cue.tracks[i];
     cue_text = cue_text.concat('\t TRACK ' + track.index + ' AUDIO \n');
